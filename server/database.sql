@@ -1,0 +1,1 @@
+create TABLE table_item (id SERIAL PRIMARY KEY,name VARCHAR(255), date VARCHAR(255),count INT,distance INT)

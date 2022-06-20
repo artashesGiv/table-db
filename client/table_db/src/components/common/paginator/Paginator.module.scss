@@ -1,0 +1,30 @@
+.paginator {
+  display: flex;
+  justify-content: center;
+
+  .selectedPage {
+    font-weight: bold;
+    color: #347c99;
+  }
+
+  .pagesNumbers {
+    cursor: pointer;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+    background-color: #ffa700;
+    padding: 5px;
+    font-size: 15px;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+

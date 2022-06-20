@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .select {
+    height: 30px;
+  }
+
+  input {
+    height: 30px;
+    padding: 10px;
+    outline: none;
+    &:focus {
+      border: 2px solid #347c99;
+    }
+  }
+
+  .err {
+    color: brown;
+  }
+
+}

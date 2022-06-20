@@ -1,0 +1,55 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.table {
+  width: 80%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  height: min-content;
+
+  td, th {
+    padding: 3px;
+    height: 35px;
+    text-align: center;
+  }
+
+  th {
+    background: #347c99;
+    color: #fff;
+    font-weight: normal;
+  }
+
+  .row {
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten(#347c99, 55%);
+    }
+
+    .btnGroup {
+      display: flex;
+      justify-content: space-around;
+
+      button {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  .hover {
+    border: none;
+    background-color: #fff;
+    width: 80px;
+  }
+
+}
+
+td, th {
+  border: 1px solid #595959;
+}

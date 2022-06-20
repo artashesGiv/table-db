@@ -1,0 +1,30 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: min(500px, 50%);
+  margin: 50px auto;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    height: 30px;
+    padding: 10px;
+    outline: none;
+    &:focus {
+      border: 2px solid #347c99;
+    }
+  }
+
+  button {
+    height: 30px;
+  }
+
+  .err {
+    color: brown;
+  }
+
+}
