@@ -12,6 +12,8 @@ export const Table = React.memo(({items, totalCount}) => {
     const column = useStore($columnForFilter)
     const currentPage = useStore($currentPage)
 
+    const isLoading = useStore(getFilteredItemFx.pending || getItemsFx.pending)
+
     const filterDataForm = useStore($filterDataForm)
     const isFilter = useStore($isFilter)
 
@@ -27,6 +29,7 @@ export const Table = React.memo(({items, totalCount}) => {
 
     return (
         <div className={style.wrapper}>
+            {isLoading && <h3>Загрузка...</h3>}
             <table className={style.table}>
                 <tbody>
                 <tr>
